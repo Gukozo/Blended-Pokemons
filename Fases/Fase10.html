@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- link com o arquivo CSS -->
+    <link rel="stylesheet" href="/Style/AdvancedLevels.css">
+
+</head>
+
+<body>
+
+    <header>
+        <!-- Número de fase do jogo -->
+        <p id="fase">Fase 10</p>
+        <!-- Logo do jogo -->
+        <center><img src="/images/logo.png" alt="" draggable="false" class="logo"></center>
+        <!-- Botão menu que volta para a tela inicial -->
+        <button onclick="location.href='/index.html'" class="menu">MENU</button>
+    </header>
+
+    <main>
+
+        <!-- pote com as figuras dos pokemons -->
+        <div action="" class="droptarget" ondrop="drop(event, this)" ondragover="allowDrop(event, this)" id="pote0" value="0" >
+            <img class="gray" src="/images/snorlax.png" alt="" id="gray0" ondragstart="dragStart(event, this)" 
+            ondrag="dragging(event)" draggable="false">
+            <img class="darkblue" src="/images/zubat.png" alt="" id="darkblue0" ondragstart="dragStart(event, this)" 
+            ondrag="dragging(event)" draggable="false">
+            <img class="green" src="/images/bullbasaur.png" alt="" id="green0" ondragstart="dragStart(event, this)" 
+            ondrag="dragging(event)" draggable="false">
+            <img class="yellow" src="/images/pikachu.png" alt="" id="yellow0" ondragstart="dragStart(event, this)" 
+            ondrag="dragging(event)" draggable="true">
+        </div>
+
+        <!-- pote com as figuras dos pokemons -->
+        <div action="" class="droptarget" ondrop="drop(event, this)" ondragover="allowDrop(event, this)" id="pote1" value="0" >
+            <img class="red" src="/images/charmander.png" alt="" id="red0" ondragstart="dragStart(event, this)" 
+            ondrag="dragging(event)" draggable="false">
+            <img class="brown" src="/images/eevee.png" alt="" id="brown0" ondragstart="dragStart(event, this)" 
+            ondrag="dragging(event)" draggable="false">
+            <img class="brown" src="/images/eevee.png" alt="" id="brown1" ondragstart="dragStart(event, this)" 
+            ondrag="dragging(event)" draggable="false">
+            <img class="brown" src="/images/eevee.png" alt="" id="brown2" ondragstart="dragStart(event, this)" 
+            ondrag="dragging(event)" draggable="true">
+        </div>
+
+        <!-- pote com as figuras dos pokemons -->
+        <div action="" class="droptarget" ondrop="drop(event, this)" ondragover="allowDrop(event, this)" id="pote2" value="0" >
+            <img class="lightblue" src="/images/dratini.png" alt="" id="lightblue0" ondragstart="dragStart(event, this)" 
+            ondrag="dragging(event)" draggable="false">
+            <img class="green" src="/images/bullbasaur.png" alt="" id="green1" ondragstart="dragStart(event, this)" 
+            ondrag="dragging(event)" draggable="false">
+            <img class="darkblue" src="/images/zubat.png" alt="" id="darkblue1" ondragstart="dragStart(event, this)" 
+            ondrag="dragging(event)" draggable="false">
+            <img class="green" src="/images/bullbasaur.png" alt="" id="green2" ondragstart="dragStart(event, this)" 
+            ondrag="dragging(event)" draggable="true">
+        </div>
+
+        <!-- pote com as figuras dos pokemons -->
+        <div action="" class="droptarget" ondrop="drop(event, this)" ondragover="allowDrop(event, this)" id="pote3" value="0" >
+            <img class="blue" src="/images/squirtle.png" alt="" id="blue0" ondragstart="dragStart(event, this)" 
+            ondrag="dragging(event)" draggable="false">
+            <img class="lightblue" src="/images/dratini.png" alt="" id="lightblue1" ondragstart="dragStart(event, this)" 
+            ondrag="dragging(event)" draggable="false">
+            <img class="yellow" src="/images/pikachu.png" alt="" id="yellow1" ondragstart="dragStart(event, this)" 
+            ondrag="dragging(event)" draggable="false">
+            <img class="gray" src="/images/snorlax.png" alt="" id="gray1" ondragstart="dragStart(event, this)" 
+            ondrag="dragging(event)" draggable="true">
+        </div>  
+
+        <!-- pote com as figuras dos pokemons -->
+        <div action="" class="droptarget" ondrop="drop(event, this)" ondragover="allowDrop(event, this)" id="pote4" value="0" >
+            <img class="gray" src="/images/snorlax.png" alt="" id="gray2" ondragstart="dragStart(event, this)" 
+            ondrag="dragging(event)" draggable="false">
+            <img class="lightblue" src="/images/dratini.png" alt="" id="lightblue2" ondragstart="dragStart(event, this)" 
+            ondrag="dragging(event)" draggable="false">
+            <img class="darkblue" src="/images/zubat.png" alt="" id="darkblue2" ondragstart="dragStart(event, this)" 
+            ondrag="dragging(event)" draggable="false">
+            <img class="blue" src="/images/squirtle.png" alt="" id="blue1" ondragstart="dragStart(event, this)" 
+            ondrag="dragging(event)" draggable="true">
+        </div>
+
+        <!-- pote com as figuras dos pokemons -->
+        <div action="" class="droptarget" ondrop="drop(event, this)" ondragover="allowDrop(event, this)" id="pote5" value="0" >
+            <img class="blue" src="/images/squirtle.png" alt="" id="blue2" ondragstart="dragStart(event, this)" 
+            ondrag="dragging(event)" draggable="false">
+            <img class="lightblue" src="/images/dratini.png" alt="" id="lightblue3" ondragstart="dragStart(event, this)" 
+            ondrag="dragging(event)" draggable="false">
+            <img class="rose" src="/images/mew.png" alt="" id="rose0" ondragstart="dragStart(event, this)" 
+            ondrag="dragging(event)" draggable="false">
+            <img class="brown" src="/images/eevee.png" alt="" id="brown3" ondragstart="dragStart(event, this)" 
+            ondrag="dragging(event)" draggable="true">
+        </div>
+
+        <!-- pote com as figuras dos pokemons -->
+        <div action="" class="droptarget" ondrop="drop(event, this)" ondragover="allowDrop(event, this)" id="pote6" value="0" >
+            <img class="yellow" src="/images/pikachu.png" alt="" id="yellow2" ondragstart="dragStart(event, this)" 
+            ondrag="dragging(event)" draggable="false">
+            <img class="red" src="/images/charmander.png" alt="" id="red1" ondragstart="dragStart(event, this)" 
+            ondrag="dragging(event)" draggable="false">
+            <img class="darkblue" src="/images/zubat.png" alt="" id="darkblue3" ondragstart="dragStart(event, this)" 
+            ondrag="dragging(event)" draggable="false">
+            <img class="green" src="/images/bullbasaur.png" alt="" id="green3" ondragstart="dragStart(event, this)" 
+            ondrag="dragging(event)" draggable="true">
+        </div>
+
+        <!-- pote com as figuras dos pokemons -->
+        <div action="" class="droptarget" ondrop="drop(event, this)" ondragover="allowDrop(event, this)" id="pote7" value="0" >
+            <img class="red" src="/images/charmander.png" alt="" id="red2" ondragstart="dragStart(event, this)" 
+            ondrag="dragging(event)" draggable="false">
+            <img class="rose" src="/images/mew.png" alt="" id="rose1" ondragstart="dragStart(event, this)" 
+            ondrag="dragging(event)" draggable="false">
+            <img class="gray" src="/images/snorlax.png" alt="" id="gray3" ondragstart="dragStart(event, this)" 
+            ondrag="dragging(event)" draggable="false">
+            <img class="rose" src="/images/mew.png" alt="" id="rose2" ondragstart="dragStart(event, this)" 
+            ondrag="dragging(event)" draggable="true">
+        </div>
+
+        <!-- pote com as figuras dos pokemons -->
+        <div action="" class="droptarget" ondrop="drop(event, this)" ondragover="allowDrop(event, this)" id="pote8" value="0" >
+            <img class="red" src="/images/charmander.png" alt="" id="red3" ondragstart="dragStart(event, this)" 
+            ondrag="dragging(event)" draggable="false">
+            <img class="blue" src="/images/squirtle.png" alt="" id="blue3" ondragstart="dragStart(event, this)" 
+            ondrag="dragging(event)" draggable="false">
+            <img class="yellow" src="/images/pikachu.png" alt="" id="yellow3" ondragstart="dragStart(event, this)" 
+            ondrag="dragging(event)" draggable="false">
+            <img class="rose" src="/images/mew.png" alt="" id="rose3" ondragstart="dragStart(event, this)" 
+            ondrag="dragging(event)" draggable="true">
+        </div>
+
+        <!-- pote vazio -->
+        <div action="" class="droptarget" ondrop="drop(event, this)" ondragover="allowDrop(event, this)" id="pote9" value="0" >
+        
+        </div>
+
+        <!-- pote vazio -->
+        <div action="" class="droptarget" ondrop="drop(event, this)" ondragover="allowDrop(event, this)" id="pote10" value="0" >
+        
+        </div>
+    </main>
+    
+    <!-- Caso o usuário consiga arrumar os pokemons, abrirá essa tela -->
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+          <p id="Frase">Parabéns por concluir todas as fases</p>
+        </div>
+
+    </div>
+
+    <!-- Botão que reiniciará a fase -->
+    <footer>
+        <audio src="/images/som-de-pancada-original.mp3"></audio>
+        <button id="retry-button">
+            retry
+        </button>
+    </footer>
+
+    <!-- Link do criador dos desenhos dos pokemons usados -->
+    <div class="bottom" id="icon">Icons made by 
+        <a href="https://www.flaticon.com/authors/roundicons-freebies" title="Roundicons Freebies">Roundicons Freebies</a> from 
+        <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a>
+    </div>
+
+    <div class="bottom" id="eu">
+        <p>Jogo desenvolvido por Gustavo Kozonoe</p>
+    </div>
+
+    <!-- Audio da musica de fundo -->
+    <audio autoplay loop id="audio">
+        <source src="/songs/Phase10.mp3"> 
+    </audio>
+    
+</body>
+    <!-- link com o arquivo JS -->
+    <script src="/main.js"></script>
+</html>

@@ -1,0 +1,226 @@
+*
+{
+    user-select: none; /*Remove a opção do usuário poder selecionar*/
+    font-family: "Papyrus", Fantasy; /* Define a fonte de todas as letras como a Papyrus */
+}
+
+body 
+{
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab); /* Transforma as cores do fundo em Dêgrade */
+    background-size: 400% 400%; /* Aumenta o tamanho do fundo */
+    animation: gradient 15s ease infinite;
+    /* Deixa a animação com duração de 15s, começando lentamente, depois acelerando e terminando lentamente. Repetindo infinitamente */
+}
+
+header
+{
+    display: flex;
+    justify-content: space-between;
+    /* Coloca o display em modo flex e ajusta os itens da header dando espaço entre eles */
+}
+
+header p
+{
+    color: #2d6099;
+    text-shadow: 0.1rem 0.1rem #ffcc03;
+    /* Define a cor como azul e põe uma sombra amarela nas letras */
+}
+
+.menu
+{
+    width: 6rem;
+    height: 3rem;
+    /* Ajusta o tamanho da largura e altura */
+
+    outline: none; /*Retira o contorno do botão */
+}
+
+header center img
+{
+    display: flex;
+    justify-content: center;
+    /* Coloca o display em modo flex e centraliza os itens */
+
+    height: 6rem; /* Altera a altura a imagem */
+}
+
+#fase
+{
+    display: flex;
+    justify-content: left;
+    /* Coloca o display em modo flex e ajusta a palavra "fase" para a esquerda */
+
+    margin-top: 0; /* Retira a margem do topo */
+    font-size: 2rem; /* ajusta o tamanho da fonte */
+}
+main
+{
+    display: flex;
+    justify-content: center;
+    /* Coloca o display em modo flex e centraliza os itens */
+
+    margin: 3.9rem 5rem; /* Ajusta o tamanho da margem */
+}
+
+.droptarget 
+{
+    display: flex;
+    float: left; 
+    /* Coloca o display em modo flex e coloca os itens à esquerda */
+
+    width: 15rem;
+    height: 30rem;
+    margin: 0.9375rem;
+    padding: 0.625rem;
+    /* Define a altura, largura, margem e o preenchimento*/
+
+    border: 0.5rem solid black;
+    border-bottom: none;
+    /* Coloca uma borda em todos os lados menos em baixo*/
+
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+    /* Ajusta as bordas do botão para ficarem arredondadas */
+
+    flex-flow: row wrap; /* Define que os itens devem quebrar a linha*/
+    align-items: flex-start; /* As bordas da margem superior dos itens-flex são juntados com a borda superior da linha. */
+    justify-content: center; /* Alinha ao centro */
+}
+
+div img
+{
+    width: 4.5rem; /* Ajusta o tamanho dos pokemons */
+}
+
+button
+{
+    cursor: pointer; /* Transforma o cursor, indicando que pode clicar no botão */
+    border-radius: 50px; /* Ajusta os cantos do botão, deixando arredondado */
+    background: linear-gradient(90deg, #fcff9e 0%, #c67700 100%); /* Transforma as cores do fundo em Dêgrade */
+}
+
+footer
+{
+    display: flex;
+    justify-content: center;
+    /* Coloca o display em modo flex e centraliza os itens */
+}
+
+footer button
+{   
+    width: 15rem;
+    height: 6rem;
+    /* Ajusta a altura e a largura do botão retry */
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;  
+    /* Ajusta o botão para ficar ao centro da imagem */
+
+    font-size: 4rem; /* ajusta o tamanho da fonte */
+    outline: none; /*Retira o contorno do botão */
+}
+
+.modal 
+{
+    display: none; /* Esconde por padrão */
+    position: fixed; /* Mantém fixado */
+    z-index: 1; /* mantém no topo */
+
+    left: 0;
+    top: 0;
+    /* Zera o left e o top */
+
+    width: 100%; /* Coloca na largura máxima */
+    height: 100%; /* Coloca na altura máxima */
+}
+
+.modal-content 
+{
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab); /* Transforma as cores do fundo em Dêgrade */
+    margin: 8rem auto; /* Define a margem 8rem topo e fundo e automática nos lados */
+    padding: 1.25rem; /* Define o preenchimento em todos os lados */
+    border: 1px solid black; /* Define a borda */
+
+    width: 30rem; 
+    height: 40rem;
+    /* Define a altura e a largura */
+}
+
+#Frase
+{
+    display: flex;
+    justify-content: center;
+    /* Coloca o display em modo flex e centraliza os itens */
+
+    margin: 1rem auto;
+    margin-bottom: 15rem;;
+    padding-left: 2.5rem;
+    /* Define as margens e o preenchimento */
+
+    font-size: 4rem; /* ajusta o tamanho da fonte */
+}
+
+#next-button
+{
+    width: 50%;
+    height: 6rem;
+    /* Define a altura e a largura */
+
+    margin-left: 7.5rem; /* Define a margem à esquerda */
+    font-size: 2rem; /* ajusta o tamanho da fonte */
+    outline: none; /*Retira o contorno do botão */
+}
+
+#next
+{
+    height: 100%; /* Ajusta para o maior tamanho possível da imagem */
+
+    margin:  0;
+    margin-top: 1.275rem;
+    /* Define as margens */
+}
+
+.bottom
+{
+    font-weight: bold;
+    /* Coloca a fonte em negrito */
+}
+
+#icon
+{
+    display: grid;
+    grid-template-columns: auto auto;
+    /* o footer em modo grid e ajusta as frases em baixo para ficar em 3 colunas */
+    text-align: center;
+    /* Ajusta o texto para o centro */
+}
+
+a
+{
+    color: black;
+    /* Define todos os "a" para a cor preto */
+}
+
+#eu
+{
+    text-align: center;
+    /* Ajusta o texto para o centro */
+}
+
+@keyframes gradient /* Define as cores que o fundo irá ter dependendo da posição do fundo */
+{
+    0% 
+    {
+        background-position: 0% 50%;
+    }
+    50% 
+    {
+        background-position: 100% 50%;
+    }
+    100% 
+    {
+        background-position: 0% 50%;
+    }
+}

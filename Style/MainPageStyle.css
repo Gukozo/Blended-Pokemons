@@ -1,0 +1,139 @@
+*
+{
+    user-select: none; /*Remove a opção do usuário poder selecionar*/
+    font-family: "Papyrus", Fantasy; /* Define a fonte de todas as letras como a Papyrus */
+    font-weight: bold; /* Coloca a fonte em negrito */
+}
+
+body 
+{
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab); /* Transforma as cores do fundo em Dêgrade */
+    background-size: 400% 400%; /* Aumenta o tamanho do fundo */
+    animation: gradient 15s ease infinite;
+    /* Deixa a animação com duração de 15s, começando lentamente, depois acelerando e terminando lentamente. Repetindo infinitamente */
+}
+
+header
+{
+    margin: 3rem auto; 
+    /* Ajusta o tamanho da margem, sendo 3rem para o topo e o fundo e automático para os lados */
+}
+
+main
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* Coloca o display em modo flex e centraliza os itens */
+
+    flex-direction: column; /* Coloca os itens em colunas */
+
+    margin: 10rem 20rem; 
+    /* Ajusta o tamanho da margem, sendo 10rem para o topo e o fundo e 20 para os lados */
+}
+
+main button 
+{
+    cursor: pointer; /* Transforma o cursor, indicando que pode clicar no botão */
+    border-radius: 50px; /* Ajusta os cantos do botão, deixando arredondado */
+    background: linear-gradient(90deg, #fcff9e 0%, #c67700 100%);  /* Transforma as cores do fundo em Dêgrade */
+
+    outline: none; /*Retira o contorno do botão */
+}
+
+.main-buttons
+{
+    width: 15rem;
+    height: 7rem;
+    /* Ajusta a altura e a largura dos botões */
+
+    margin: 0.5rem;
+    /* Ajusta a margem para 0.5 para todos os lados */
+
+    font-size: 4rem; /* ajusta o tamanho da fonte */
+}
+
+.modal 
+{
+    display: none; /* Esconde por padrão */
+    position: fixed; /* Mantém fixado */
+    z-index: 1; /* mantém no topo */
+
+    left: 0;
+    top: 0;
+    /* Zera o left e o top */
+
+    width: 100%; /* Coloca na largura máxima */
+    height: 100%; /* Coloca na altura máxima */
+}
+
+.modal-content 
+{
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab); /* Transforma as cores do fundo em Dêgrade */
+    margin: 8rem auto; /* Define a margem 8rem topo e fundo e automática nos lados */
+    padding: 1.25rem; /* Define o preenchimento em todos os lados */
+    border: 1px solid black; /* Define a borda */
+
+    width: 30rem; 
+    height: 40rem;
+    /* Define a altura e a largura */
+}
+
+.level
+{    
+    text-align: center; /* Ajusta o texto para o centro */
+    font-size: 3rem; /* ajusta o tamanho da fonte */
+    margin: 1rem; /* Ajusta a margem para 1 para todos os lados */
+}
+
+div div div button
+{
+    font-size: 4rem; /* ajusta o tamanho da fonte */
+    width: 6rem; /* Define a largura */
+
+    margin: 4rem 5rem;
+    /* Ajusta a margem para 4 para o topo e o fundo e 5 para os lados */
+}
+
+.inside-buttons
+{
+    column-count: 8;
+    /* Define que os botões estarão no formato de 8 colunas */
+}
+
+.close
+{
+    width: 13rem;
+    height: 4rem;
+    /* Define a altura e a largura */
+
+    font-size: 1.7rem; /* ajusta o tamanho da fonte */
+
+    margin-left: 8.5rem; /* Define a margem à esquerda */
+}
+footer
+{
+    display: flex;
+    justify-content: center;
+    /* Coloca o display em modo flex e centraliza os itens */
+
+    text-align: center; /* Ajusta o texto para o centro */
+    font-size: 2rem; /* ajusta o tamanho da fonte */
+}
+
+@keyframes gradient  /* Define as cores que o fundo irá ter dependendo da posição do fundo */
+{
+    0% 
+    {
+        background-position: 0% 50%;
+    }
+    50% 
+    {
+        background-position: 100% 50%;
+    }
+    100% 
+    {
+        background-position: 0% 50%;
+    }
+
+}
