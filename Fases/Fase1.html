@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- link com o arquivo CSS -->
-    <link rel="stylesheet" href="/Style/BackwardLevels.css">
+    <link rel="stylesheet" href="Style/BackwardLevels.css">
 
 </head>
 
@@ -15,7 +15,7 @@
         <!-- Número de fase do jogo -->
         <p id="fase">Fase 1</p>
         <!-- Logo do jogo -->
-        <center><img src="/images/logo.png" alt="" draggable="false" class="logo"></center>
+        <center><img src="images/logo.png" alt="" draggable="false" class="logo"></center>
         <!-- Botão menu que volta para a tela inicial -->
         <button onclick="location.href='/index.html'" class="menu">MENU</button>
     </header>
@@ -24,31 +24,31 @@
 
         <!-- pote com as figuras dos pokemons -->
         <div action="" class="droptarget" ondrop="drop(event, this)" ondragover="allowDrop(event, this)" id="pote0" value="0" >
-            <img class="red" src="/images/charmander.png" alt="" id="red0" ondragstart="dragStart(event, this)" 
+            <img class="red" src="images/charmander.png" alt="" id="red0" ondragstart="dragStart(event, this)" 
             ondrag="dragging(event)" draggable="false">
-            <img class="green" src="/images/bullbasaur.png" alt="" id="green0" ondragstart="dragStart(event, this)" 
+            <img class="green" src="images/bullbasaur.png" alt="" id="green0" ondragstart="dragStart(event, this)" 
             ondrag="dragging(event)" draggable="false">
-            <img class="blue" src="/images/squirtle.png" alt="" id="blue0" ondragstart="dragStart(event, this)" 
+            <img class="blue" src="images/squirtle.png" alt="" id="blue0" ondragstart="dragStart(event, this)" 
             ondrag="dragging(event)" draggable="true">
         </div>
 
         <!-- pote com as figuras dos pokemons -->
         <div action="" class="droptarget" ondrop="drop(event, this)" ondragover="allowDrop(event, this)" id="pote1" value="0" >
-            <img class="blue" src="/images/squirtle.png" alt="" id="blue1" ondragstart="dragStart(event, this)" 
+            <img class="blue" src="images/squirtle.png" alt="" id="blue1" ondragstart="dragStart(event, this)" 
             ondrag="dragging(event)" draggable="false">
-            <img class="red" src="/images/charmander.png" alt="" id="red1" ondragstart="dragStart(event, this)" 
+            <img class="red" src="images/charmander.png" alt="" id="red1" ondragstart="dragStart(event, this)" 
             ondrag="dragging(event)" draggable="false">
-            <img class="green" src="/images/bullbasaur.png" alt="" id="green1" ondragstart="dragStart(event, this)" 
+            <img class="green" src="images/bullbasaur.png" alt="" id="green1" ondragstart="dragStart(event, this)" 
             ondrag="dragging(event)" draggable="true">
         </div>
 
         <!-- pote com as figuras dos pokemons -->
         <div action="" class="droptarget" ondrop="drop(event, this)" ondragover="allowDrop(event, this)" id="pote2" value="0" >
-            <img class="blue" src="/images/squirtle.png" alt="" id="blue2" ondragstart="dragStart(event, this)" 
+            <img class="blue" src="images/squirtle.png" alt="" id="blue2" ondragstart="dragStart(event, this)" 
             ondrag="dragging(event)" draggable="false">
-            <img class="green" src="/images/bullbasaur.png" alt="" id="green2" ondragstart="dragStart(event, this)" 
+            <img class="green" src="images/bullbasaur.png" alt="" id="green2" ondragstart="dragStart(event, this)" 
             ondrag="dragging(event)" draggable="false">
-            <img class="red" src="/images/charmander.png" alt="" id="red2" ondragstart="dragStart(event, this)" 
+            <img class="red" src="images/charmander.png" alt="" id="red2" ondragstart="dragStart(event, this)" 
             ondrag="dragging(event)" draggable="true">
         </div>
 
@@ -65,7 +65,7 @@
 
             <p id="Frase">Parabéns por concluir a fase</p>
             <!-- botão que levará para a próxima fase -->
-            <button onclick="location.href='/Fases/fase2.html'" id="next-button">NEXT</button>
+            <button onclick="location.href='Fases/fase2.html'" id="next-button">NEXT</button>
 
         </div>
     </div>
@@ -89,12 +89,12 @@
 
     <!-- Audio da musica de fundo -->
     <audio autoplay loop id="audio">
-        <source src="/songs/Phase1.mp3"> 
+        <source src="songs/Phase1.mp3"> 
     </audio>
 
 </body>
     <!-- link com o arquivo JS -->
-    <script src="/main.js"></script>
+    <script src="main.js"></script>
 </html>
 
 
