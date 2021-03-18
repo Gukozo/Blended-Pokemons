@@ -8,6 +8,7 @@ var ActualPokemonGlobal = 0; //Guarda globalmente o pokemon atual
 var limit = document.querySelectorAll("div.droptarget"); //Pega todos os potes
 var limitX = FindNumberOfPokemons(limit); //Guarda globalmente o número de pokemons diferentes que tem na fase
 var limitY = limit[0].children.length //Variável que guarda o numero máximo de pokemons em um pote
+var IsPoke = 0; //Variável que guarda se um pokemon está sendo largado em outro
 
 //Adiciona um evento caso haja um click no botão para que execute uma função que da um reload na página
 button.addEventListener('click', function(){window.location.reload();}) 
@@ -87,8 +88,11 @@ function dragging(event){}//Função que ativa quando o pokemon está sendo puxa
 
 function allowDrop(event, CurrentPot) {event.preventDefault();}//Função que permite soltar o pokemon
 
+function denyDrop(event, CurrentPokemon){return IsPoke = 1;}//Função para evitar um bug que sumia um pokemon quando ele era largado em um pokemon
+
 function drop(event, CurrentPot)//Função que verifica se é possível largar o pokemon
 {
+  if(IsPoke == 1) return IsPoke = 0; //Verifica se o local onde o pokemon está sendo largado é um pokemon ou um pote
   var NumberOfPokemon = CurrentPot.children.length; //Pega o número de pokemons onde o pokemon foi largado
   var ActualPot = CurrentPot; //Guarda na variável o pote atual
   var UpwardPokemon = CurrentPot.lastElementChild; //Pega o pokemon acima do pokemon que foi largado
